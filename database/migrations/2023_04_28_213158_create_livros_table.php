@@ -19,6 +19,7 @@ class CreateLivrosTable extends Migration
             $table->string('autor',190);
             $table->date('data_de_publicacao');
             $table->text('observations')->nullable();
+            $table->integer('quantidade')->default(1);
             $table->double('price');
             $table->timestamps();
         });

@@ -4,9 +4,8 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateLivrosRequest extends FormRequest
+class AtualizarLivrosRequest extends FormRequest
 {
-
     public function authorize()
     {
         return true;
@@ -35,5 +34,5 @@ class CreateLivrosRequest extends FormRequest
             'max' => 'Você passou do limite de 190 caracteres',
             'required' => 'O campo :attribute é obrigatório', 
         ];
-    }    
+    }
 }
