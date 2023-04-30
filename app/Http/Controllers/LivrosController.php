@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class LivrosController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index()
     {
@@ -34,7 +38,7 @@ class LivrosController extends Controller
 
     public function edit(Livros $livros)
     {
-        return view('livros.edit', compact('livros'));
+        return view('livros.edit', compact($livros));
     }
 
     public function update(Request $request, Livros $livros)

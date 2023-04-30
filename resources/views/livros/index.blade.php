@@ -31,18 +31,16 @@
                         <tbody>
                             @foreach ($livros as $key => $livro) 
                                 <tr>
-                                    <td scope="row">{{$livro->book_name}}<td>
-                                    <td>{{$livro->autor}}<td>
-                                    <td>{{$livro->data_de_publicacao}}<td>
-                                    <td>{{$livro->quantidade}}<td>
-                                    <td>{{$livro->price}}<td>
+                                    <td scope="row">{{$livro->book_name}}</td>
+                                    <td>{{$livro->autor}}</td>
+                                    <td>{{$livro->data_de_publicacao}}</td>
+                                    <td>{{$livro->quantidade}}</td>
+                                    <td>{{$livro->price}}</td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
-
-
-
+                    
                 </div>
             </div>
         </div>
